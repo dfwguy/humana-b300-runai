@@ -1,0 +1,30 @@
+{
+  "_comment": "Edit this file, then run: python scripts/render.py  (or find/replace values in yaml/ by hand). Items marked UNVERIFIED must be confirmed before relying on them. No credentials belong in this file.",
+  "project": "nvis-validation",
+  "namespace": "runai-nvis-validation",
+  "scheduler_name": "runai-scheduler",
+  "runai_url": "https://runai.dgxsd01.adc.humana.com",
+  "gpus_per_node": 8,
+
+  "image_pytorch": "nvcr.io/nvidia/pytorch:26.04-py3",
+  "image_nemo": "nvcr.io/nvidia/nemo:25.07.01",
+  "image_mnubergemm": "replace-with-staged-mnubergemm-image",
+
+  "nodes": ["dgx001","dgx002","dgx003","dgx004","dgx005","dgx006","dgx007","dgx008",
+            "dgx009","dgx010","dgx011","dgx012","dgx013","dgx014","dgx015","dgx016"],
+  "four_node_set": ["dgx001","dgx002","dgx003","dgx004"],
+
+  "networks": ["default/p0-r0","default/p0-r1","default/p0-r2","default/p0-r3",
+               "default/p0-r4","default/p0-r5","default/p0-r6","default/p0-r7",
+               "default/p1-r0","default/p1-r1","default/p1-r2","default/p1-r3",
+               "default/p1-r4","default/p1-r5","default/p1-r6","default/p1-r7"],
+  "network_resources": ["nvidia.com/p0-r0","nvidia.com/p0-r1","nvidia.com/p0-r2","nvidia.com/p0-r3",
+                        "nvidia.com/p0-r4","nvidia.com/p0-r5","nvidia.com/p0-r6","nvidia.com/p0-r7",
+                        "nvidia.com/p1-r0","nvidia.com/p1-r1","nvidia.com/p1-r2","nvidia.com/p1-r3",
+                        "nvidia.com/p1-r4","nvidia.com/p1-r5","nvidia.com/p1-r6","nvidia.com/p1-r7"],
+
+  "nccl_max_bytes": "16G",
+  "mnubergemm_seconds": 600,
+  "results_hostpath": "",
+  "nemo_recipe_hostpath": "/vast/validation/nemo56b"
+}

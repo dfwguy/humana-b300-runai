@@ -1,0 +1,16 @@
+nvidia.com/p0-r0=1
+nvidia.com/p0-r1=1
+nvidia.com/p0-r2=1
+nvidia.com/p0-r3=1
+nvidia.com/p0-r4=1
+nvidia.com/p0-r5=1
+nvidia.com/p0-r6=1
+nvidia.com/p0-r7=1
+nvidia.com/p1-r0=1
+nvidia.com/p1-r1=1
+nvidia.com/p1-r2=1
+nvidia.com/p1-r3=1
+nvidia.com/p1-r4=1
+nvidia.com/p1-r5=1
+nvidia.com/p1-r6=1
+nvidia.com/p1-r7=1
